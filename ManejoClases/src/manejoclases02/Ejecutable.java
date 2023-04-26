@@ -6,17 +6,26 @@
 package manejoclases02;
 
 public class Ejecutable {
+
     public static void main(String[] args) {
         // Se crea un objeto
         Hospital hospital = new Hospital();
-        
+        Hospital hospital2 = new Hospital();
+
         // Se asigna valores particulares al objeto
-        hospital.nombre = "Isidro Ayora";
+     /*   hospital.nombre = "Isidro Ayora";
         hospital.numeroCamas = 100;
         hospital.presupuesto = 560340.43;
-        
+
         // Se presenta valores en pantalla
         System.out.printf("%s - %d - %.2f\n", hospital.nombre,
                 hospital.numeroCamas, hospital.presupuesto);
+*/
+        hospital2.setNombre("Clínica Sofia ");
+        hospital2.setNumeroCamas(598);
+        hospital2.setPresupuesto(52352.36);
+
+        System.out.printf("%s - %d - %.2f\n", hospital2.getNombre(),
+                hospital2.getNumeroCamas(), hospital2.getPresupuesto());
     }
 }
